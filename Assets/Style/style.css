@@ -18,6 +18,10 @@ i {
 	letter-spacing: 7px;
  }
 
+.underline {
+    text-decoration: underline;
+}
+
 ::-webkit-scrollbar {
 	background-color: #FFF;
 	height: 10px;
@@ -154,7 +158,24 @@ header .title_right {
 	margin-top: 0;
 	top: 40%;
  }
- 
+
+.main-page-pic {
+    background-position: center 20%;
+    border-radius: 100%;
+    display: inline-block;
+    height: 400px;
+    width: 400px;
+    margin-right: 500px;
+}
+
+.content_container h2, h3, h4 {
+    font-family: 'Content', sans-serif;
+}
+
+.content_container h2, h3 {
+    margin: 20px 0 20px 0;
+}
+
 .slideShow {
 	background-color: #27383D;
 	border-radius: 400px;
@@ -459,7 +480,7 @@ footer .home {
 	transform: skewY(-5deg);
 	width: 50%;
  }
- 
+
 .portfolio_container {
 	height: 600px;
 	width: 100%;
@@ -496,8 +517,12 @@ footer .home {
  
 .hire_me {
 	background-color: #25707A;
-	border-radius: 200px;
+	border-radius: 100%;
+    box-shadow: 8px 8px 12px #111;
 	height: 200px;
+    position: fixed;
+    top: 15%;
+    right: 4%;
 	text-align: center;
 	width: 200px;
  }
