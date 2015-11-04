@@ -23,4 +23,10 @@ $(document).ready(function() {
             }    
         }
     });
+
+    $('#skills').on('click', function() {
+        $('html, body').animate({
+            scrollTop: ($("#skillsContent").offset().top - 200)
+        }, 2000);
+    });
 });
