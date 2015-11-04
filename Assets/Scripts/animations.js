@@ -1,21 +1,25 @@
 $(document).ready(function() {
     $(window).scroll(function() {
-        var infoHome = $('#info_circle'),
-            infoPort = $('#info_circle_portfolio'),
+        var skillsLeft = $('#skillsLeft'),
+            skillsRight = $('#skillsRight'),
             angle2Pos = $('#angle2').position(),
             bottomPortPos = $('#angle_last').position();
         
-        if(infoHome) {
+        if(skillsLeft) {
             if($(this).scrollTop() > angle2Pos.top)
             {
-                $('#info_circle').css("left", "0");
+                skillsLeft.animate({
+                    left: "+=100%"
+                }, 2000, function() {
+                    console.log('animation complete');
+                });
             }
         }
         
-        if(infoPort) {
+        if(skillsRight) {
             if($(this).scrollTop() > bottomPortPos.top - 200)
             {
-               $('#info_circle_portfolio').css("left", "0");
+               skillsRight.css("left", "0");
             }    
         }
     });

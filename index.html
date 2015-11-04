@@ -1,12 +1,10 @@
-<!DOCTYPE-html>
+<!DOCTYPE html>
 <html>
 
 <head>
     <title>Jadon's website</title>
-    <link rel="stylesheet" type="text/css" href="Assets/Style/style.css" />
+    <link rel="stylesheet" type="text/css" href="Assets/Style/style.css">
     <script type="text/javascript" src="Assets/Scripts/jquery-2.1.0.min.js"></script>
-    <script type="text/javascript" src="Assets/Scripts/main_page.js"></script>
-    <script type="text/javascript" src="Assets/Scripts/animations.js"></script>
 </head>
 
 <body>
@@ -34,13 +32,7 @@
     <section class="main">
         <section class="angle_hor angle_last" id="angle_last">
             <section class="content_container no_anlge">
-                <section class="section_title" id="info_circle_portfolio">
-                    <article>S</article>
-                </section>
-                <article class="about_text" id="home_about">
-                    <a href="skills.html" class="no_decor"><h1>Check out my skills.</h1></a>
-                    <p>I have the knowledge and tools to make your next project a success.</p>
-                </article>
+
             </section>
             <footer>
                 <section class="footer_angle footer_left"></section>
@@ -50,13 +42,21 @@
         </section>
         <section class="angle_hor angle2" id="angle2" data-type="anlge" data-slide_amount="400">
             <section class="content_container content_middle">
-                <section class="section_title" id="info_circle">
-                    <article>In<br/>fo</article>
-                </section>
-                <article class="about_text">
-                    <a href="about.html" class="no_decor"><h1>Learn about me.</h1></a>
-                    <p>Check out my brief bio to learn a little more about me.</p>
-                </article>
+                <h1 class="skills-header">My Particular Set of Skills</h1>
+                <div id="leftSkills" class="skills-content">
+                    <h1 class="skills-content-header">Languages</h1>
+                    <h1>JavaScript</h1>
+                    <h1>C<span class='symbol'>#</span></h1>
+                    <h1>Java</h1>
+                    <h1>Ruby</h1>
+                </div>
+                <div id="rightSkills" class="skills-content">
+                    <h1 class="skills-content-header">Frameworks</h1>
+                    <h1>ReactJS</h1>
+                    <h1>AngularJS</h1>
+                    <h1>Node.JS</h1>
+                    <h1>.NET</h1>
+                </div>
             </section>
         </section>
         <section class="angle_hor angle1" data-type="anlge" data-slide_amount="-250">
@@ -65,12 +65,14 @@
                 <article class="about_text">
                     <a href="portfolio.html" class="no_decor"><h1>Jadon Leininger</h1></a>
                     <h3>Full Stack Web Developer with a Passion for Great Design.</h3>
-                    <h3 class="underline">Languages</h3>
-                    <h1>JavaScript  C#  Java</h1>
+                    <h1>An Expert in</h1>
+                    <h1 id="skills" class="skills">JavaScript</h1>
                     </article>
                 </section>  
             </section>
         </section>
-    <section class="hire_me"><a href="contact.html">Hire Me</a</section>
+    <section class="hire_me"><a href="contact.html">Hire Me</a></section>
+    <script type="text/javascript" src="Assets/Scripts/main.js"></script>
+    <script type="text/javascript" src="Assets/Scripts/animations.js"></script>
     </body>
 </html>
