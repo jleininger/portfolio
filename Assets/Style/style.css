@@ -129,7 +129,7 @@ header .title_right {
 	min-height: 100%;
 	width: 100%;
  }
- 
+
 .about_text {
 	display: inline-block;
 	margin-top: 5%;
@@ -137,7 +137,7 @@ header .title_right {
 	right: 0;
 	width: 50%;
 	z-index: 100;
- }
+}
  
 	.about_text h1 {
 		font-family: "Title", Times, serif;
@@ -150,7 +150,27 @@ header .title_right {
 		font-size: 24px;
 		margin-bottom: 10px;
 	 }
- 
+
+.portfolio-about-text {
+	display: inline-block;
+	margin: 50px auto;
+	width: 50%;
+	vertical-align: middle;
+	z-index: 100;
+}
+
+.portfolio-about-text h1 {
+	font-family: "Title", Times, serif;
+	font-size: 48px;
+	margin-bottom: 5%;
+}
+
+.portfolio-about-text p {
+	font-family: "Content", sans-serif;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
 #info_circle {
 	-webkit-transform: skewY(0deg);
 	top: 55%;
@@ -413,7 +433,6 @@ header .title_right {
 		background-color: #25707A;
 		border-radius: 350px;
 		height: 300px;
-		left: -100%;
 		margin: 0 0 0 20px;
 		position: relative;
 		top: 40%;
@@ -423,11 +442,21 @@ header .title_right {
 	 }
  
 #info_circle_portfolio {
+	display: inline-block;
 	-webkit-transform: skewY(0deg);
-	top: 30%;
+	top: 10%;
 	transform: skewY(0deg);
  }
- 
+
+#info_circle_portfolio a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.portfolio-bottom {
+	margin-top: 100px;
+}
+
 .section_title article {
 	display: block;
 	font-family: "Title", Times;
@@ -436,13 +465,13 @@ header .title_right {
 	left: 4;
 	position: relative;
 	text-align: center;
-	top: 15;
+	top: 15px;
 	width: 70%;
  }
  
 #info_circle_portfolio article {
 	font-size: 200px;
-	top: 30;
+	top: 30px;
  }
 
 .social_media {
@@ -558,6 +587,11 @@ footer .home {
 	font-family: 'Lato', sans-serif;
 	font-weight: bold;
  }
+
+.about_own h2 {
+	font-family: "Title", Times, serif;
+
+}
  
 .hire_me {
 	background-color: #25707A;
@@ -582,7 +616,12 @@ footer .home {
 		top: 25%;
 		width: 90%;
 	 }
- 
+
+.resume a {
+	top: 40%;
+	font-size: 36px;
+}
+
 .content_middle {
 	-webkit-transform: skewY(5deg);
 	top: 20%;

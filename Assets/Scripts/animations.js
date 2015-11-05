@@ -1,26 +1,14 @@
 $(document).ready(function() {
     $(window).scroll(function() {
-        var skillsLeft = $('#skillsLeft'),
-            skillsRight = $('#skillsRight'),
+        var infoPortfolio = $('#info_circle_portfolio'),
             angle2Pos = $('#angle2').position(),
             bottomPortPos = $('#angle_last').position();
-        
-        if(skillsLeft) {
-            if($(this).scrollTop() > angle2Pos.top)
-            {
-                skillsLeft.animate({
-                    left: "+=100%"
-                }, 2000, function() {
-                    console.log('animation complete');
-                });
-            }
-        }
-        
-        if(skillsRight) {
+
+        if(infoPortfolio) {
             if($(this).scrollTop() > bottomPortPos.top - 200)
             {
-               skillsRight.css("left", "0");
-            }    
+                infoPortfolio.css('display', 'block');
+            }
         }
     });
 
