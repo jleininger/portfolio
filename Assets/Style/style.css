@@ -222,7 +222,7 @@ header .title_right {
 
 .skills-content-header {
 	margin-bottom: 20px;
-	text-decoration: underline;
+	border-bottom: 3px solid #000000;
 }
 
 .symbol {
