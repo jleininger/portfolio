@@ -78,6 +78,10 @@ header {
 		float: left;
 		transform: skewY(5deg);
 	 }
+
+    header .selected {
+        color: #6A9AA8;
+    }
  
 .home {
 	color: #FFF;
@@ -324,11 +328,11 @@ header .title_right {
 		font-family: "Content", sans-serif;
 		font-size: 24px;
 		height: 100%;
-		opacity: 0.50;
+		opacity: 0.30;
 		position: relative;
 		text-align: center;
 		top: 0;
-		transition: top 0.35s;
+		transition: top 0.35s, opacity 0.35s;
 		width: 100%;
 		z-index: 150;
 	 }
@@ -339,8 +343,16 @@ header .title_right {
 			top: 30%;
 			transform: translate(0, -50);
 		 }
+
+        .port_wrapper .overlay a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
  
-	.port_wrapper:hover .overlay {top: -100%;}
+	.port_wrapper:hover .overlay {
+        top: -100%;
+        opacity: 0.85;
+    }
  
 .portfolio_piece {
 	background-position: center;
@@ -352,12 +364,17 @@ header .title_right {
 	top: 0;
 	width: 100%;
  }
+
+.center-background {
+    background-position: center;
+    background-size: cover;
+}
  
 #piece1 {background-image: url("../Images/Aroww.jpg");}
  
 #piece2 {background-image: url("../Images/AnyMark_Promo-920.png");}
  
-#piece3 {background-image: url("../Images/Burden.jpg");}
+#piece3 {background-image: url("../Images/workfront.png");}
  
 #piece4 {
 	background-image: url("../Images/code.jpg");
@@ -366,7 +383,7 @@ header .title_right {
  
 #upcoming1 {background-image: url("../Images/logo.png");}
  
-#upcoming2 {background-image: url("../Images/google_developers.jpg");}
+#upcoming2 {background-image: url("../Images/Microphone-icon.png");}
  
 #upcoming3 {
 	background-image: url("../Images/unityLogo.png");

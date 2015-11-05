@@ -12,5 +12,5 @@
         }
 
         skillsText.innerHTML = skills[currentSkill - 1];
-    }, 3000);
+    }, 2000);
 }());
